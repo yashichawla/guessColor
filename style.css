@@ -41,3 +41,11 @@ header h2 {
   padding: 0 10px;
   color: white;
 }
+a {
+  display: block;
+  color: white;
+}
+a:hover {
+  display: block;
+  color: hotpink;
+}
