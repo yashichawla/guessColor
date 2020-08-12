@@ -75,19 +75,3 @@ function randomColor() {
   //return one string of color
   return "rgb(" + red + ", " + green + ", " + blue + ")";
 }
-// twitter = document.querySelector("a");
-// twitter.
-//   if (b) {
-//     twitter.classList.add("active");
-//   } else {
-//     twitter.classList.remove("active");
-//   }
-// });
-// $(".score").hover(
-//   function () {
-//     $("a").addClass("active");
-//   },
-//   function () {
-//     $("a").removeClass("active");
-//   }
-// );
