@@ -2,11 +2,10 @@ var grids = document.querySelectorAll(".grid");
 var hex = document.querySelector(".color-code");
 var colors;
 var pickedColor;
+
 setScreen();
 init();
-function get() {
-  alert("grid x was clicked");
-}
+
 function setScreen() {
   colors = getRandomColor();
   pickedColor = pickColor();
@@ -14,6 +13,7 @@ function setScreen() {
   for (var i = 0; i < 3; i++) {
     //add initial colors to squares
     grids[i].style.backgroundColor = colors[i];
+    grids[i].addEventListener("click", audio);
   }
 }
 function init() {
@@ -50,7 +50,10 @@ function wrong() {
   $(".score").text(newScore);
   setTimeout(reset, 300);
 }
-
+function audio() {
+  var audio = new Audio("pop.mp3");
+  audio.play();
+}
 function pickColor() {
   var random = Math.floor(Math.random() * colors.length);
   return colors[random];
